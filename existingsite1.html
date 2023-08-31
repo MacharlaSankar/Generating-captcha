@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student Survey</title>
+    <link rel="stylesheet" href="existingsite.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+	integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/all.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <form class="center" action="" method="post">
+        <h1>Student survey form</h1>
+        <div class="details">
+        <p><strong>Materials</strong></p>
+            <br>
+            <table>
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th>Strongly Disagree</th>
+                        <th>Disagree</th>
+                        <th>Neutral</th>
+                        <th>Agree</th>
+                        <th>Strongly Agree</th>
+                    </tr>
+                    <tr>
+                        <th><label>The objectives and requirements for the classes were clearly started.</label></th>
+                        <td><input type="radio" name="students" class="size"></td>
+                            <td><input type="radio" name="students" class="size"></td>
+                            <td><input type="radio" name="students" class="size"></td>
+                            <td><input type="radio" name="students" class="size"></td>
+                            <td><input type="radio" name="students" class="size"></td>
+                    </tr>
+                    <tr>
+                        <th><label>The instructions were qualified to teach these clases.</label></th>
+                        <td><input type="radio" name="students1" class="size"></td>
+                            <td><input type="radio" name="students1" class="size"></td>
+                            <td><input type="radio" name="students1" class="size"></td>
+                            <td><input type="radio" name="students1" class="size"></td>
+                            <td><input type="radio" name="students1" class="size"></td>
+                    </tr>
+                    <tr>
+                        <th><label>The instructions were available and helpful to students outside of class.</label></th>
+                        <td><input type="radio" name="students2" class="size"></td>
+                            <td><input type="radio" name="students2" class="size"></td>
+                            <td><input type="radio" name="students2" class="size"></td>
+                            <td><input type="radio" name="students2" class="size"></td>
+                            <td><input type="radio" name="students2" class="size"></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <br><br>
+            <p><strong>Instructions</strong></p>
+            <table>
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th>Strongly Disagree</th>
+                        <th>Disagree</th>
+                        <th>Neutral</th>
+                        <th>Agree</th>
+                        <th>Strongly Agree</th>
+                    </tr>
+                    <tr>
+                        <th><label>The instructions were qualifies to teach these classes.</label></th>
+                        <td><input type="radio" name="textbook" class="size"></td>
+                            <td><input type="radio" name="textbook" class="size"></td>
+                            <td><input type="radio" name="textbook" class="size"></td>
+                            <td><input type="radio" name="textbook" class="size"></td>
+                            <td><input type="radio" name="textbook" class="size"></td>
+                    </tr>
+                    <tr>
+                        <th><label>The instructions demonstrated enthusiasm for the subject matter.</label></th>
+                        <td><input type="radio" name="textbook1" class="size"></td>
+                            <td><input type="radio" name="textbook1" class="size"></td>
+                            <td><input type="radio" name="textbook1" class="size"></td>
+                            <td><input type="radio" name="textbook1" class="size"></td>
+                            <td><input type="radio" name="textbook1" class="size"></td>
+                    </tr>
+                    <tr>
+                        <th><label>The instructions were available and helpful to students and outside of class.</label></th>
+                        <td><input type="radio" name="textbook2" class="size"></td>
+                            <td><input type="radio" name="textbook2" class="size"></td>
+                            <td><input type="radio" name="textbook2" class="size"></td>
+                            <td><input type="radio" name="textbook2" class="size"></td>
+                            <td><input type="radio" name="textbook2" class="size"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <p><strong>How likely are you to recomonded our school to a friend or colleague.</strong></p><br>
+            <input type="radio" name="likely" class="size">&nbsp<label>Very likey</label><br><br>
+            <input type="radio" name="likely" class="size">&nbsp<label>Somewhat likey</label><br><br>
+            <input type="radio" name="likely" class="size">&nbsp<label>Unsure</label><br><br>
+            <input type="radio" name="likely" class="size">&nbsp<label>Not very likey</label><br><br>
+            <input type="radio" name="likely" class="size">&nbsp<label>Not likey</label><br><br>
+            <p>If not,why?</p>
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea><br><br>
+            <p>What could we do to increase your level of satisfaction?</p>
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea><br><br>
+            </div>
+            <hr>
+            <label id="name"><h2>Enter Captcha</h2></label>
+            <div class="captcha-container text-center">
+                <input type="text" id="captchaInput" placeholder="Enter Captcha Code">
+                <span class="inline" onclick="generateCaptcha()">
+                    <i class="fas fa-sync"></i>
+                </span>
+                <span id="generatedCaptcha" class="inline"></span>
+            </div>
+            
+
+            <div class="button">
+                <form action="Task1.html" method="post">
+                    <button type="button" id="previousButton">Go Back</button>
+                </form>
+            <button id="btn">Submit</button></div>
+    </form>
+    <script>
+        
+        
+            function generateCaptcha() {
+                
+                var captchaCode = generateRandomCaptcha();
+                document.getElementById("generatedCaptcha").textContent = captchaCode;
+            }
+        
+            function generateRandomCaptcha() {
+                
+                var chars = "0123456789abcdefghijklmnopqrstuvwxyz";
+                var captcha = "";
+                for (var i = 0; i < 6; i++) {
+                    captcha += chars[Math.floor(Math.random() * chars.length)];
+                }
+                return captcha;
+            }
+        
+            function validateCaptcha() {
+                var enteredCaptcha = document.getElementById("captchaInput").value;
+                var generatedCaptcha = document.getElementById("generatedCaptcha").textContent;
+    
+                if (enteredCaptcha === generatedCaptcha) {
+                    
+                    alert("success");
+                } else {
+                    alert("Invalid CAPTCHA code. Please try again.");
+                    generateCaptcha();
+                }
+            }
+            document.getElementById("previousButton").addEventListener("click", function () {
+                history.back();
+            });
+    
+            document.getElementById("btn").addEventListener("click", function (event) {
+                event.preventDefault();
+                validateCaptcha(); 
+            });
+        
+            
+            generateCaptcha();
+    
+    </script>
+    
+</body>
+</html>
